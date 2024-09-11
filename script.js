@@ -72,8 +72,55 @@ let resDivFourth = (-100 % n4);
 console.log(`Result divided by fourth remainder?` , resDivFourth) // Equals 0
 
 //   Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
-const isOver25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25; // Set all values less than 25
-console.log(`Numbers over 25?`, isOver25)
+const isOver25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25; 
+console.log(`Numbers over 25?`, isOver25) // Used && and < 25 for each number for true statement
 
 // Part Two: Practical Math ----------------------------------------------------------
+const total = 1500 // trip total miles
+const mpg1 = 30 // @55mph = 30mpg
+const mpg2 = 28 // @60mph = 28mpg
+const mpg3 = 23 // @75mph = 23mpg
+const mph1 = 55 
+const mph2 = 60
+const mph3 = 75
+const fuel = 3 // cost per gallon
+const budget = 175 // fuel budget
+
+// How many gallons of fuel will you need for the entire trip?
+const gallon1 = total / mpg1
+console.log(`Gallons at 55mph?`, gallon1) // 50 gallons
+
+const gallon2 = total / mpg2
+console.log(`Gallons at 60mph?`, gallon2) // 53.57142857142857 gallons
+
+const gallon3 = total / mpg3
+console.log(`Gallons at 75mph?`, gallon3) // 65.21739130434783 gallons
+
+// Will your budget be enough to cover the fuel expense?
+const cost1 = gallon1 * fuel
+console.log(`Cost at 55mph?`, cost1) // yes, $150 total
+
+const cost2 = gallon2 * fuel
+console.log (`Cost at 60mph?`, cost2) // yes, $160.72 total
+
+const cost3 = gallon3 * fuel
+console.log (`Cost at 75mph?`, cost3) // no, $195.65 total
+
+// How long will the trip take, in hours?
+let time1 = total / mph1
+console.log (`Trip time at 55mph?`, time1) // 27.272727272727273 hours
+
+let time2 = total / mph2
+console.log (`Trip time at 60mph?`, time2) // 25 hours
+
+let time3 = total / mph3
+console.log (`Trip time at 75mph?`, time3) // 20 hours
+
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+
+
+// Log the results of your calculations using string concatenation or template literals.
+
+
+
 // Part Three: Future Explorations ----------------------------------------------------
